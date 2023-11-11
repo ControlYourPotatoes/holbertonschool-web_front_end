@@ -355,21 +355,21 @@ template {
 }
 
 html {
-	scroll-behavior: smooth;
-	font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
-	color: var(--text-color);
-	font-family: var(--font-family-base);
-	font-size: var(--font-size-medium);
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
 
 }
 
 a{
-	color: #161616;
+  color: #161616;
   text-decoration: none;
 }
 
@@ -389,7 +389,6 @@ a:hover {
 a:active {
   background-color: var(--color-light-grey);
 }
-
 
 .navbar-menu{
   float: right;
@@ -435,6 +434,9 @@ a:active {
   width: 100%;
 }
 
+.visually-hidden{
+  display: none;
+}
 
 .card-category{
   color: var(--color-primary);
@@ -491,6 +493,20 @@ a:active {
   opacity: 1;
 }
 
+.card-testimonial .card-quote{
+  position: relative;
+}
+
+.card-testimonial .card-quote::before{
+  content: "\201C";
+  position: absolute;
+  top: -4.5rem;
+  left: -1rem;
+  color: #efeded;
+  font-size: 10rem;
+  z-index: -1;
+}
+
 .section{
   padding: var(--section-padding);
 
@@ -519,7 +535,7 @@ a:active {
 }
 
 .section-tagline{
-	color: var(--color-primary);
+  color: var(--color-primary);
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
@@ -533,7 +549,7 @@ a:active {
 }
 
 h1 h2 h3 h4 h5 h6{
-	font-family: var(--font-family-title);
+  font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
 

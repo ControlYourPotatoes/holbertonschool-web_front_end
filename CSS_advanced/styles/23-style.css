@@ -207,17 +207,6 @@ select {
 }
 
 /**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    -webkit-appearance: button;
-}
-
-/**
  * Remove the inner border and padding in Firefox.
  */
 
@@ -308,17 +297,6 @@ textarea {
     height: auto;
 }
 
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-    -webkit-appearance: textfield;
-    /* 1 */
-    outline-offset: -2px;
-    /* 2 */
-}
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
@@ -533,22 +511,16 @@ ul.row {
 
 }
 
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+}
+
 .footer-copyright {
     margin: 0;
     font-size: var(--font-size-small);
     color: var(--text-color);
-}
-
-.footer-address {
-    color: var(--text-color);
-}
-
-.social-link {
-    display: block;
-}
-
-.social-link>svg {
-    fill: var(--text-color);
 }
 
 .footer ul {

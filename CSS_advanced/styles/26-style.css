@@ -549,10 +549,35 @@ ul.row {
     background-color: var(--color-light-grey);
 }
 
+.card-testimonial{
+  text-align: center;
+}
+
 .card-services a:hover {
     color: var(--color-white);
     background-color: var(--color-primary);
     text-decoration: none;
+}
+
+.card-testimonial .card-avatar{
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+
+.card-testimonial .card-quote cite {
+  display: block;
+  padding-top: 1rem;
+  color: var(--color-primary);
+}
+
+.button{
+  display: var(--button-display);
+  padding: var(--button-padding);
+  border: var(--button-border);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+  text-decoration: var(--button-text-decoration);
 }
 
 .button {

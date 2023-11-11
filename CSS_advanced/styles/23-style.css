@@ -514,7 +514,7 @@ ul.row {
 [data-section-theme="dark"] {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
-    background-color: var(--color-black);
+    background: var(--color-black);
 }
 
 .footer-copyright {
@@ -525,6 +525,10 @@ ul.row {
 
 .footer ul {
     text-align: right;
+}
+
+.footer-address {
+    color: var(--text-color);
 }
 
 :root {

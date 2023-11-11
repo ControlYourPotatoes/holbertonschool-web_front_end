@@ -83,14 +83,19 @@ a[href]:not([href=""]) {
     text-decoration: none;
 }
 
-a[href]:not([href=""]):visited {
+a:link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:visited {
     font-style: italic;
 }
 
-a[href]:not([href=""]):hover {
+a:hover {
     text-decoration: underline;
 }
 
-a[href]:not([href=""]):active {
+a:active {
     background-color: var(--color-light-grey);
 }
